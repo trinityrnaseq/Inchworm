@@ -1,2 +1,0 @@
-# Inchworm
-Inchworm codebase
