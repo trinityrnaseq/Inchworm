@@ -1,38 +1,13 @@
 
 
-
-Primary source of Inchworm Documentation is the website:
-
-    http://inchworm.sf.net
-
-Basic installation instructions and usage are as follows:
-
-Download the latest release from sourceforge.  
-
-If you want the bleeding edge, pull it from SVN at your own risk:
-
-   svn co https://inchworm.svn.sourceforge.net/svnroot/inchworm inchworm
-
-
-
 ** Installing Inchworm **
 
 Hopefully, all you should need to do is this:
 
-    ./configure --prefix=`pwd`
-
     make
 
-    make install
-
+    
 and 'inchworm' will appear as ./bin/inchworm
-
-
-Note: if you prefer to minimize memory allocations, you can enable the use of Google's sparse-hash like so:
-
-   ./configure --prefix=`pwd`  CPPFLAGS=-D__GOOGLE__
-
-The inchworm will run slower (~3x) but consume less memory.
 
 
 ** Running Inchworm **
