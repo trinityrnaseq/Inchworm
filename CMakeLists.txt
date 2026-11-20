@@ -6,6 +6,12 @@ project (Inchworm)
 
 enable_language(CXX)
 
+# Trinity requires a 64-bit platform (64-bit integers/pointers for k-mer encoding and large memory use).
+# This replaces the former -m64 flag, which is x86-only and breaks aarch64/arm64 builds.
+if(NOT CMAKE_SIZEOF_VOID_P EQUAL 8)
+    message(FATAL_ERROR "Inchworm requires a 64-bit build (CMAKE_SIZEOF_VOID_P=${CMAKE_SIZEOF_VOID_P}); 32-bit platforms are not supported.")
+endif()
+
 set(default_build_type "Release")
 
 if(NOT CMAKE_BUILD_TYPE)
