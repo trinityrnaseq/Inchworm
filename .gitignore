@@ -1,0 +1,9 @@
+# build outputs (make installs binaries to bin/)
+/build/
+/bin/
+/src/FastaToDeBruijn
+/src/SNP_stomper
+/src/cigar_tweaker
+/src/fastaToKmerCoverageStats
+/src/inchworm
+/src/pull_reads_with_kmers
